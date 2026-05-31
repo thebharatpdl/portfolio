@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Mail, Phone, Download } from 'lucide-react'
+import { MapPin, Mail, Phone } from 'lucide-react'
 import profileImage from    '../profile.jpeg'
 
 function TypingText({ texts }: { texts: string[] }) {
