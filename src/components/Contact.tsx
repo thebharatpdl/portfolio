@@ -8,7 +8,6 @@ const LI = () => <svg width="16" height="16" fill="currentColor" viewBox="0 0 24
 
 const CONTACTS = [
   { icon: <Mail size={16} />, label: 'Email', value: 'bharatpaudel1010@gmail.com', href: 'mailto:bharatpaudel1010@gmail.com', color: 'var(--a1)' },
-  { icon: <Phone size={16} />, label: 'Phone', value: '+977-9866353305', href: 'tel:+9779866353305', color: 'var(--a2)' },
   { icon: <MapPin size={16} />, label: 'Location', value: 'Kathmandu, Nepal', href: null, color: 'var(--a3)' },
   { icon: <GH />, label: 'GitHub', value: 'github.com/thebharatpdl', href: 'https://github.com/thebharatpdl', color: '#67e8f9' },
   { icon: <LI />, label: 'LinkedIn', value: 'linkedin.com/in/bharat-paudel', href: 'https://linkedin.com/in/bharat-paudel', color: '#818cf8' },
@@ -95,26 +94,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Right — form */}
-          <motion.div initial={{ opacity: 0, x: 36 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.7, delay: 0.3 }}>
-            <form onSubmit={handle} className="glass" style={{ borderRadius: 24, padding: '32px 28px', display: 'flex', flexDirection: 'column', gap: 20 }}>
-              <Field label="Your Name" id="name" value={form.name} onChange={v => setForm(f => ({ ...f, name: v }))} placeholder="Bharat Paudel" />
-              <Field label="Email" id="email" type="email" value={form.email} onChange={v => setForm(f => ({ ...f, email: v }))} placeholder="you@example.com" />
-              <Field label="Message" id="msg" value={form.message} onChange={v => setForm(f => ({ ...f, message: v }))} placeholder="Tell me about your project..." rows={5} />
-
-              <button type="submit"
-                style={{
-                  padding: '14px', borderRadius: 14, fontSize: 14, fontWeight: 700, fontFamily: 'Syne,sans-serif',
-                  background: sent ? 'linear-gradient(135deg,var(--a3),#059669)' : 'linear-gradient(135deg,var(--a1),var(--a2))',
-                  color: '#fff', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                  boxShadow: '0 8px 28px rgba(108,143,255,0.2)', transition: 'all 0.25s',
-                }}
-                onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.02)')}
-                onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}>
-                {sent ? <><CheckCircle size={16} /> Sent!</> : <><Send size={15} /> Send Message</>}
-              </button>
-            </form>
-          </motion.div>
+         
         </div>
       </div>
     </section>
