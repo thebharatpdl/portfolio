@@ -13,7 +13,7 @@ const PROJECTS = [
     desc:'Real-time facial recognition and emotion detection using OpenCV for live video processing. Custom CNN trained on augmented FER-2013 dataset achieving 74.78% test accuracy across 7 human emotions.',
     stack:['Python','OpenCV','TensorFlow/Keras','CNN','SVM/KNN','Haar Cascades'],
     highlights:['74.78% accuracy — 7 emotion classes','Haar Cascade + SVM/KNN identity matching','Auto CSV generation & chart analytics'],
-    github:'https://github.com/fred-system',
+    github:'https://github.com/thebharatpdl/FRED',
     color:'#f472b6', glow:'rgba(244,114,182,0.1)',
   },
   {
@@ -21,7 +21,7 @@ const PROJECTS = [
     desc:'Real-time social platform with live feed, 1-on-1 messaging, typing indicators, and read receipts via Socket.io. 15+ REST endpoints with Redux Toolkit state management.',
     stack:['React Native','TypeScript','Socket.io','Node.js','Express','MongoDB','Redux Toolkit'],
     highlights:['Real-time messaging with Socket.io','15+ REST API endpoints','FlatList & state optimization'],
-    github:'https://github.com/anonymous-feed',
+    github:'https://github.com/thebharatpdl/anonymous-forum',
     color:'#6c8fff', glow:'rgba(108,143,255,0.1)',
   },
   {
@@ -29,7 +29,7 @@ const PROJECTS = [
     desc:'Real-time expense tracking with dynamic balance calculation. Offline-first architecture using Redux Persist and Firestore synchronisation for seamless connectivity.',
     stack:['React Native','TypeScript','Firebase','Redux Toolkit','Node.js'],
     highlights:['Offline-first with Redux Persist','Firestore real-time sync','Reusable TypeScript components'],
-    github:'https://github.com/expense-tracker',
+    github:'https://github.com/thebharatpdl/expense_track',
     color:'#34d399', glow:'rgba(52,211,153,0.1)',
   },
 ]

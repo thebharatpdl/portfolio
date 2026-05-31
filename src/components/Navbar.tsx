@@ -162,7 +162,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              <span className="gradient-text">BP</span>
+              {/* <span className="gradient-text">BP</span> */}
               <motion.span
                 style={{
                   position: 'absolute',
