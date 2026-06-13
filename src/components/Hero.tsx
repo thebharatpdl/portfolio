@@ -171,9 +171,9 @@ export default function Hero() {
               <span style={{display:'flex',alignItems:'center',gap:6}}><MapPin size={13} style={{color:'var(--a1)'}}/> Kathmandu, Nepal</span>
               <a href="mailto:bharatpaudel1010@gmail.com" style={{display:'flex',alignItems:'center',gap:6,transition:'color 0.2s', color:'#ccc'}}
                 onMouseEnter={e=>(e.currentTarget.style.color='#fff')} onMouseLeave={e=>(e.currentTarget.style.color='#ccc')}>
-                <Mail size={13} style={{color:'var(--a2)'}}/> bharatpaudel1010@gmail.com
+                <Mail size={13} style={{color:'var(--a2)'}}/>
               </a>
-              <span style={{display:'flex',alignItems:'center',gap:6, color:'#ccc'}}><Phone size={13} style={{color:'var(--a3)'}}/> +977-9866353305</span>
+              <span style={{display:'flex',alignItems:'center',gap:6, color:'#ccc'}}><Phone size={13} style={{color:'var(--a3)'}}/></span>
             </motion.div>
 
             <motion.div id="btn-r" initial={{opacity:0,y:16}} animate={{opacity:1,y:0}} transition={{delay:0.55,duration:0.6}}
